@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna精緻寵護美容 - 給毛孩最溫柔的陪伴</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        milktea: {
+                            50: '#FAF6F0',
+                            100: '#F4ECE1',
+                            200: '#E8D8C3',
+                            300: '#D9C0A3',
+                            400: '#C7A783',
+                            500: '#B58E65',
+                            600: '#9B724A',
+                            700: '#7E5936',
+                            800: '#624326',
+                            900: '#48301B',
+                        },
+                        cream: '#FFFDF9',
+                        warmgray: '#6C635B'
+                    },
+                    fontFamily: {
+                        sans: ['"Zen Maru Gothic"', '"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF6F0;
+            color: #624326;
+            font-family: 'Zen Maru Gothic', 'Noto Sans TC', sans-serif;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#E8D8C3 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-pattern antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-milktea-200 shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-milktea-300 flex items-center justify-center text-cream shadow">
+                    <i class="fa-solid font-bold fa-paw text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-milktea-800 tracking-wide">Anna精緻寵護美容</h1>
+                    <p class="text-xs text-milktea-500">中小型犬 ‧ 貓咪溫柔陪伴與洗護</p>
+                </div>
+            </div>
+            <a href="#booking" class="bg-milktea-500 hover:bg-milktea-600 text-white text-sm font-medium px-4 py-2 rounded-full transition shadow hover:shadow-md flex items-center gap-1">
+                <i class="fa-brands fa-line text-lg"></i>
+                <span>預約洗洗</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-6 space-y-8 flex-grow">
+
+        <!-- ① 工作室簡介與基礎資訊 (控制在300字以內) -->
+        <section class="bg-gradient-to-br from-cream to-milktea-100 rounded-3xl p-6 sm:p-8 shadow-sm border border-milktea-200 relative overflow-hidden">
+            <div class="relative z-10 space-y-4 max-w-lg">
+                <span class="inline-block bg-milktea-200 text-milktea-800 text-xs px-3 py-1 rounded-full font-medium">
+                    ✨ 上班族爸媽安心首選 ‧ 中小型犬貓專門
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-milktea-900 leading-relaxed">
+                    忙了一天辛苦啦！<br/>寶貝交給 Anna，您安心上班吧 💕
+                </h2>
+                <!-- 簡介文字說明（少於300字） -->
+                <p class="text-milktea-700 text-sm leading-relaxed">
+                    嗨！我是 Anna。在這裡，我們專門為中小型犬與可愛貓咪提供零壓力、一對一的慢工細護美容。我們理解上班族爸媽時間緊張，因此提供彈性預約與貼心照護，讓狗狗貓貓就像在家一樣自在放鬆，洗完澡香噴噴、開心回家！
+                </p>
+
+                <!-- 工作室實體聯絡與地址資訊 -->
+                <div class="bg-cream/80 backdrop-blur p-4 rounded-2xl border border-milktea-200 text-xs text-milktea-800 space-y-2 shadow-inner">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-milktea-500 text-sm"></i>
+                        <span><strong>門市地址：</strong>台北市大安區溫州街 88 號（近捷運站，方便停車）</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-milktea-500 text-sm"></i>
+                        <span><strong>預約專線：</strong>0900-000-000 （美容師：王小美 / Anna）</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-milktea-500 text-sm"></i>
+                        <span><strong>營業時間：</strong>10:00 - 20:00（配合上班族可預約早送晚接）</span>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex flex-wrap gap-3">
+                    <a href="#calculator" class="bg-milktea-600 hover:bg-milktea-700 text-white text-sm font-medium px-5 py-2.5 rounded-2xl transition shadow">
+                        毛孩健康小計算
+                    </a>
+                    <a href="#pricing" class="bg-white hover:bg-milktea-50 text-milktea-700 border border-milktea-300 text-sm font-medium px-5 py-2.5 rounded-2xl transition">
+                        查看完整價目
+                    </a>
+                </div>
+            </div>
+            <div class="hidden sm:block absolute right-4 bottom-4 text-milktea-200/60 -z-0">
+                <i class="fa-solid fa-shield-cat text-[160px]"></i>
+            </div>
+        </section>
+
+        <!-- 實拍質感寫真畫廊 (擬真寫真牆) -->
+        <section class="space-y-3">
+            <h3 class="text-sm font-bold text-milktea-600 flex items-center gap-1.5">
+                <i class="fa-solid fa-camera"></i> 工作室日常實拍記錄
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div class="group relative overflow-hidden rounded-2xl bg-milktea-200 aspect-square shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=500&q=80" alt="實拍汪星人美容" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    <span class="absolute bottom-2 left-2 bg-black/40 text-white text-[10px] px-2 py-0.5 rounded-full backdrop-blur-sm">洗後鬆鬆造型</span>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-milktea-200 aspect-square shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" alt="實拍貓咪洗護" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    <span class="absolute bottom-2 left-2 bg-black/40 text-white text-[10px] px-2 py-0.5 rounded-full backdrop-blur-sm">貓咪溫柔洗護</span>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-milktea-200 aspect-square shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=500&q=80" alt="中型犬洗澡" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    <span class="absolute bottom-2 left-2 bg-black/40 text-white text-[10px] px-2 py-0.5 rounded-full backdrop-blur-sm">中型犬泡泡SPA</span>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-milktea-200 aspect-square shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=500&q=80" alt="毛孩放鬆休息" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                    <span class="absolute bottom-2 left-2 bg-black/40 text-white text-[10px] px-2 py-0.5 rounded-full backdrop-blur-sm">休息區無壓力陪伴</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ④ 價目表 (符合中小型犬、貓主題) -->
+        <section id="pricing" class="bg-cream rounded-3xl p-6 sm:p-8 border border-milktea-200 shadow-sm space-y-6">
+            <div class="text-center space-y-1">
+                <span class="text-xs text-milktea-500 font-bold uppercase tracking-wider">透明化價目表</span>
+                <h2 class="text-2xl font-bold text-milktea-800">精緻洗護與美容服務內容</h2>
+                <p class="text-xs text-milktea-600">專為小型犬、中型犬與貓咪量身規劃（包含基礎指甲、清耳朵、剃腳底毛）</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- 小型犬 -->
+                <div class="p-5 rounded-2xl bg-milktea-50 border border-milktea-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-dog text-milktea-500 text-lg"></i>
+                            <h4 class="font-bold text-milktea-900 text-base">小型犬 (10kg 以下)</h4>
+                        </div>
+                        <p class="text-[11px] text-milktea-600 mb-3">例：貴賓、博美、吉娃娃、馬爾濟斯</p>
+                        <ul class="text-xs text-milktea-700 space-y-2 border-t border-milktea-200 pt-3">
+                            <li class="flex justify-between"><span>基礎小洗澡</span><strong class="text-milktea-800">$500 起</strong></li>
+                            <li class="flex justify-between"><span>全套大美容 (含修剪)</span><strong class="text-milktea-800">$900 起</strong></li>
+                            <li class="flex justify-between"><span>草本皮毛草本SPA</span><strong class="text-milktea-800">+$300</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 中型犬 -->
+                <div class="p-5 rounded-2xl bg-milktea-100/60 border border-milktea-300 flex flex-col justify-between relative">
+                    <span class="absolute -top-2.5 right-4 bg-milktea-500 text-white text-[10px] px-2 py-0.5 rounded-full font-medium">上班族熱選</span>
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-dog text-milktea-600 text-xl"></i>
+                            <h4 class="font-bold text-milktea-900 text-base">中型犬 (10-20kg)</h4>
+                        </div>
+                        <p class="text-[11px] text-milktea-600 mb-3">例：柴犬、柯基、法鬥、米克斯</p>
+                        <ul class="text-xs text-milktea-700 space-y-2 border-t border-milktea-200 pt-3">
+                            <li class="flex justify-between"><span>基礎小洗澡</span><strong class="text-milktea-800">$800 起</strong></li>
+                            <li class="flex justify-between"><span>全套大美容 (含修剪)</span><strong class="text-milktea-800">$1,400 起</strong></li>
+                            <li class="flex justify-between"><span>深層去毛退毛處理</span><strong class="text-milktea-800">+$400</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 貓咪專區 -->
+                <div class="p-5 rounded-2xl bg-milktea-50 border border-milktea-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-cat text-milktea-500 text-lg"></i>
+                            <h4 class="font-bold text-milktea-900 text-base">貓咪專區 (全品種)</h4>
+                        </div>
+                        <p class="text-[11px] text-milktea-600 mb-3">獨立安靜洗護環境，一對一減壓</p>
+                        <ul class="text-xs text-milktea-700 space-y-2 border-t border-milktea-200 pt-3">
+                            <li class="flex justify-between"><span>短毛貓低敏洗護</span><strong class="text-milktea-800">$700 起</strong></li>
+                            <li class="flex justify-between"><span>長毛貓除毛洗護</span><strong class="text-milktea-800">$1,000 起</strong></li>
+                            <li class="flex justify-between"><span>局部理毛/修肚毛</span><strong class="text-milktea-800">+$250</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-[11px] text-center text-milktea-500">※ 實際收費將依據毛孩現場毛髮結塊程度、行為緊張狀況稍調整，預約前皆會明確告知。</p>
+        </section>
+
+        <!-- ② 換算功能 (毛孩人類年齡 & 身高體重/BMI評估) -->
+        <section id="calculator" class="bg-cream rounded-3xl p-6 sm:p-8 border border-milktea-200 shadow-sm space-y-6">
+            <div class="text-center space-y-1">
+                <span class="text-xs text-milktea-500 font-bold uppercase tracking-wider">Interactive Tools</span>
+                <h2 class="text-2xl font-bold text-milktea-800">毛孩健康小計算機</h2>
+                <p class="text-xs text-milktea-600">幫寶貝算算看相當於人類幾歲，並估算體態健康的 BMI 數值！</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 換算一：毛孩年齡 轉 人類年齡 -->
+                <div class="bg-milktea-50 p-5 rounded-2xl border border-milktea-200 space-y-4">
+                    <h3 class="font-bold text-milktea-800 flex items-center gap-2">
+                        <i class="fa-solid fa-hourglass-half text-milktea-500"></i>
+                        1. 毛孩人類年齡換算
+                    </h3>
+                    <div class="space-y-3 text-xs">
+                        <div>
+                            <label class="block text-milktea-700 font-medium mb-1">選擇寵物種類：</label>
+                            <select id="petType" class="w-full p-2.5 rounded-xl border border-milktea-300 bg-white text-milktea-800 focus:outline-none focus:ring-2 focus:ring-milktea-400">
+                                <option value="dog-small">小型犬 (10kg以下)</option>
+                                <option value="dog-medium">中型犬 (10-20kg)</option>
+                                <option value="cat">貓咪</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-milktea-700 font-medium mb-1">毛孩實際年齡（歲）：</label>
+                            <input type="number" id="petAge" min="0.5" max="25" step="0.5" value="3" class="w-full p-2.5 rounded-xl border border-milktea-300 bg-white text-milktea-800 focus:outline-none focus:ring-2 focus:ring-milktea-400" placeholder="例如：3">
+                        </div>
+                        <button onclick="calculateHumanAge()" class="w-full bg-milktea-500 hover:bg-milktea-600 text-white font-medium py-2.5 rounded-xl transition shadow">
+                            開始換算人類年齡
+                        </button>
+                    </div>
+                    <div id="ageResult" class="p-3 bg-white rounded-xl border border-milktea-200 text-center text-xs text-milktea-800 font-bold hidden">
+                        <!-- 動態結果 -->
+                    </div>
+                </div>
+
+                <!-- 換算二：體高/身長與體重評估 (BMI/體態估算) -->
+                <div class="bg-milktea-50 p-5 rounded-2xl border border-milktea-200 space-y-4">
+                    <h3 class="font-bold text-milktea-800 flex items-center gap-2">
+                        <i class="fa-solid fa-weight-scale text-milktea-500"></i>
+                        2. 體長/體重 BMI 體態換算
+                    </h3>
+                    <div class="space-y-3 text-xs">
+                        <div>
+                            <label class="block text-milktea-700 font-medium mb-1">毛孩體長/肩高 (公分 cm)：</label>
+                            <input type="number" id="petHeight" min="10" max="150" value="35" class="w-full p-2.5 rounded-xl border border-milktea-300 bg-white text-milktea-800 focus:outline-none focus:ring-2 focus:ring-milktea-400" placeholder="例如：35">
+                        </div>
+                        <div>
+                            <label class="block text-milktea-700 font-medium mb-1">毛孩體重 (公斤 kg)：</label>
+                            <input type="number" id="petWeight" min="0.5" max="60" step="0.1" value="5.5" class="w-full p-2.5 rounded-xl border border-milktea-300 bg-white text-milktea-800 focus:outline-none focus:ring-2 focus:ring-milktea-400" placeholder="例如：5.5">
+                        </div>
+                        <button onclick="calculatePetBMI()" class="w-full bg-milktea-500 hover:bg-milktea-600 text-white font-medium py-2.5 rounded-xl transition shadow">
+                            計算 BMI 體態指數
+                        </button>
+                    </div>
+                    <div id="bmiResult" class="p-3 bg-white rounded-xl border border-milktea-200 text-center text-xs text-milktea-800 font-bold hidden">
+                        <!-- 動態結果 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ③ 衛教方式 (至少二則符合工作室主題之知識與照護重點) -->
+        <section class="bg-cream rounded-3xl p-6 sm:p-8 border border-milktea-200 shadow-sm space-y-6">
+            <div class="text-center space-y-1">
+                <span class="text-xs text-milktea-500 font-bold uppercase tracking-wider">Health & Care</span>
+                <h2 class="text-2xl font-bold text-milktea-800">Anna 的毛孩洗護衛教小筆記</h2>
+                <p class="text-xs text-milktea-600">回家照顧更輕鬆，陪伴寶貝健康漂亮成長</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- 衛教 1 -->
+                <div class="p-5 rounded-2xl bg-milktea-50 border border-milktea-200 space-y-3">
+                    <div class="flex items-center gap-2 text-milktea-800 font-bold">
+                        <div class="w-8 h-8 rounded-full bg-milktea-200 flex items-center justify-center text-milktea-700 text-sm">
+                            <i class="fa-solid fa-shower"></i>
+                        </div>
+                        <h3>衛教重點 1：洗澡美容後的居家黃金照護</h3>
+                    </div>
+                    <p class="text-xs text-milktea-700 leading-relaxed">
+                        毛孩剛洗完澡回家，皮膚毛孔處於放鬆狀態。建議回家後<strong>前 2 小時不要立刻帶去戶外吹冷風</strong>，並讓毛孩充足補充水分。若寶貝有舔腳腳或抓耳動作，請先檢查耳道是否乾爽，洗完澡後的 3 天內持續維持環境乾燥，能大幅降低皮膚敏感或黴菌問題喔！
+                    </p>
+                </div>
+
+                <!-- 衛教 2 -->
+                <div class="p-5 rounded-2xl bg-milktea-50 border border-milktea-200 space-y-3">
+                    <div class="flex items-center gap-2 text-milktea-800 font-bold">
+                        <div class="w-8 h-8 rounded-full bg-milktea-200 flex items-center justify-center text-milktea-700 text-sm">
+                            <i class="fa-solid fa-comb"></i>
+                        </div>
+                        <h3>衛教重點 2：中小型犬貓日常防打結梳毛術</h3>
+                    </div>
+                    <p class="text-xs text-milktea-700 leading-relaxed">
+                        上班族爸媽平時忙碌，建議每天只要抽空 <strong>3-5 分鐘</strong>，順著毛流替毛孩梳理。特別是腋下、大腿內側與耳後，是最容易打結的地方。梳毛不僅能促進皮膚血液循環、維持毛髮蓬鬆，還能趁機檢查是否有寄生蟲或壁蝨，也是建立與毛孩親密感的好時機！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 預約與聯絡區塊 -->
+        <section id="booking" class="bg-milktea-600 text-white rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-md">
+            <h3 class="text-2xl font-bold">快帶毛孩來 Anna 這裡洗香香吧！</h3>
+            <p class="text-sm text-milktea-100 max-w-md mx-auto">
+                上班送來、下班接走剛剛好！點擊下方預約專線或 LINE，為寶貝安排最舒適的洗護時光。
+            </p>
+            
+            <div class="pt-2 flex flex-col sm:flex-row justify-center items-center gap-3">
+                <button onclick="copyLineId()" class="w-full sm:w-auto bg-white text-milktea-800 font-bold px-6 py-3 rounded-2xl hover:bg-milktea-50 transition flex items-center justify-center gap-2 shadow">
+                    <i class="fa-brands fa-line text-green-500 text-xl"></i>
+                    <span>複製 LINE ID 預約 (@anna_pet)</span>
+                </button>
+                <a href="tel:0900000000" class="w-full sm:w-auto bg-milktea-700 text-white font-bold px-6 py-3 rounded-2xl hover:bg-milktea-800 transition flex items-center justify-center gap-2 border border-milktea-500">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>電話預約 (0900-000-000)</span>
+                </a>
+            </div>
+            
+            <div id="toast" class="hidden text-xs bg-milktea-900 text-milktea-100 py-1.5 px-4 rounded-full inline-block mt-2">
+                已複製 LINE ID！請至 LINE 搜尋加好友哦 🐾
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="bg-cream border-t border-milktea-200 mt-12 py-6 text-center text-xs text-milktea-600 space-y-2">
+        <p>© 2026 Anna精緻寵護美容 Pet Grooming Studio. All rights reserved.</p>
+        <p class="text-milktea-500 font-medium">美容師：王小美 (Anna) ｜ 聯絡電話：0900-000-000 ｜ 地址：台北市大安區溫州街88號</p>
+        <p class="text-milktea-500 font-medium">製作：Anna</p>
+        <p class="text-[10px] text-milktea-400 mt-1">本頁由 AI 協助製作；內容僅供參考，實際以店家說明為準</p>
+    </footer>
+
+    <!-- JavaScript 運算邏輯與互動機制 -->
+    <script>
+        // 複製 LINE ID 邏輯
+        function copyLineId() {
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = "@anna_pet";
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+
+            const toast = document.getElementById("toast");
+            toast.classList.remove("hidden");
+            setTimeout(() => {
+                toast.classList.add("hidden");
+            }, 3000);
+        }
+
+        // 換算一：毛孩人類年齡換算
+        function calculateHumanAge() {
+            const type = document.getElementById("petType").value;
+            const age = parseFloat(document.getElementById("petAge").value);
+            const resultDiv = document.getElementById("ageResult");
+
+            if (isNaN(age) || age <= 0) {
+                resultDiv.innerHTML = "<span class='text-red-500'>請輸入正確的年齡數值唷！</span>";
+                resultDiv.classList.remove("hidden");
+                return;
+            }
+
+            let humanAge = 0;
+            if (type === "dog-small") {
+                // 小型犬公式: 第一年約15歲，第二年約24歲，之後每年+4歲
+                humanAge = age <= 1 ? age * 15 : age <= 2 ? 15 + (age - 1) * 9 : 24 + (age - 2) * 4;
+            } else if (type === "dog-medium") {
+                // 中型犬公式: 第一年約15歲，第二年約24歲，之後每年+5歲
+                humanAge = age <= 1 ? age * 15 : age <= 2 ? 15 + (age - 1) * 9 : 24 + (age - 2) * 5;
+            } else if (type === "cat") {
+                // 貓咪公式: 第一年約15歲，第二年約24歲，之後每年+4歲
+                humanAge = age <= 1 ? age * 15 : age <= 2 ? 15 + (age - 1) * 9 : 24 + (age - 2) * 4;
+            }
+
+            humanAge = Math.round(humanAge);
+            resultDiv.innerHTML = `🐾 毛孩 ${age} 歲，相當於人類大約 <span class="text-milktea-600 text-sm font-black">${humanAge}</span> 歲囉！`;
+            resultDiv.classList.remove("hidden");
+        }
+
+        // 換算二：寵物 BMI 體態算估算
+        function calculatePetBMI() {
+            const heightCm = parseFloat(document.getElementById("petHeight").value);
+            const weightKg = parseFloat(document.getElementById("petWeight").value);
+            const resultDiv = document.getElementById("bmiResult");
+
+            if (isNaN(heightCm) || isNaN(weightKg) || heightCm <= 0 || weightKg <= 0) {
+                resultDiv.innerHTML = "<span class='text-red-500'>請輸入正確的身高體重數值唷！</span>";
+                resultDiv.classList.remove("hidden");
+                return;
+            }
+
+            const heightM = heightCm / 100;
+            // 寵物簡易 BMI 參考值 = 體重(kg) / (體高m * 體高m)
+            const bmi = (weightKg / (heightM * heightM)).toFixed(1);
+
+            let status = "";
+            let color = "";
+            if (bmi < 35) {
+                status = "體態偏瘦（可適度補充營養與毛髮保養）";
+                color = "text-amber-600";
+            } else if (bmi >= 35 && bmi <= 55) {
+                status = "理想標準體態！非常健康棒棒 👍";
+                color = "text-green-600";
+            } else {
+                status = "體態微胖（建議控制零食，多出門散步唷）";
+                color = "text-red-500";
+            }
+
+            resultDiv.innerHTML = `📊 BMI 指數為 <span class="text-sm font-black">${bmi}</span><br/><span class="${color}">${status}</span>`;
+            resultDiv.classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
